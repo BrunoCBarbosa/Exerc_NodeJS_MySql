@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogos</title>
+</head>
+<body>
+
+    <h1>Jogos</h1>
+    <a href="/novojogo">Novo Jogo</a>
+    <a href="/">Voltar</a>
+    <br><br>
+
+    <table>
+        <tr>
+            <td>Nome</td>
+            <td>Descrição</td>
+        </tr>
+        
+        <% for(var i=0; i < games.length; i++) { %>
+            <tr>
+                <td><%= games[i].name %></td>
+                <td><%= games[i].description %></td>
+            </tr>
+        <% } %>
+    </table>
+    
+</body>
+</html>

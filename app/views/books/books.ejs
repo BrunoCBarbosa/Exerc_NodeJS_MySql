@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Livros</title>
+</head>
+<body>
+
+    <h1>Livros</h1>
+    <a href="/novolivro">Novo Livro</a>
+    <a href="/">Voltar</a>
+    <br><br>
+
+    <table>
+        <tr>
+            <td>Nome</td>
+            <td>Descrição</td>
+        </tr>
+        
+        <% for(var i=0; i < books.length; i++) { %>
+            <tr>
+                <td><%= books[i].name %></td>
+                <td><%= books[i].description %></td>
+            </tr>
+        <% } %>
+    </table>
+    
+</body>
+</html>

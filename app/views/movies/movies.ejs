@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Filmes</title>
+</head>
+<body>
+
+    <h1>FILMES</h1>
+    <a href="/novofilme">Novo Filme</a>
+    <a href="/">Voltar</a>
+    <br><br>
+
+    <table>
+        <tr>
+            <td>Nome</td>
+            <td>Descrição</td>
+        </tr>
+        
+        <% for(var i=0; i < movies.length; i++) { %>
+            <tr>
+                <td><%= movies[i].name %></td>
+                <td><%= movies[i].description %></td>
+            </tr>
+        <% } %>
+    </table>
+    
+</body>
+</html>
