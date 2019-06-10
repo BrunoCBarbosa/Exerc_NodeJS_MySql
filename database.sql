@@ -1,3 +1,7 @@
+CREATE DATABASE portal_informacoes
+
+use portal_informacoes
+
 CREATE TABLE filmes (
     id int NOT NULL AUTO_INCREMENT,
     name varchar(200) NOT NULL,

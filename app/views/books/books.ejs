@@ -11,16 +11,18 @@
     <a href="/">Voltar</a>
     <br><br>
 
-    <table>
+    <table border="1">
         <tr>
             <td>Nome</td>
             <td>Descrição</td>
+            <td></td>
         </tr>
         
         <% for(var i=0; i < books.length; i++) { %>
             <tr>
                 <td><%= books[i].name %></td>
                 <td><%= books[i].description %></td>
+                <td><a href="deletarlivro?id=<%= books[i].id %>">Deletar</a></td>
             </tr>
         <% } %>
     </table>

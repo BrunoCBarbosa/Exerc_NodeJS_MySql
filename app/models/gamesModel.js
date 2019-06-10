@@ -8,5 +8,9 @@ module.exports = function(){
         connection.query('INSERT INTO games SET ?', games, callback);
     }
 
+    this.deleteGame = function(id, connection, callback){
+        connection.query('DELETE FROM games WHERE id = ' + id.id, callback);
+    }
+
     return this;
 }

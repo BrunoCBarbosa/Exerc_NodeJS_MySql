@@ -8,5 +8,9 @@ module.exports = function(){
         connection.query('INSERT INTO movies SET ?', movies, callback);
     }
 
+    this.deleteMovie = function(id, connection, callback){
+        connection.query('DELETE FROM movies WHERE id = ' + id.id, callback);
+    }
+
     return this;
 }

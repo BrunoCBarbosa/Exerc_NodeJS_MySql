@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Filmes</title>
+    
 </head>
 <body>
 
@@ -11,16 +12,18 @@
     <a href="/">Voltar</a>
     <br><br>
 
-    <table>
+    <table  border="1">
         <tr>
             <td>Nome</td>
             <td>Descrição</td>
+            <td></td>
         </tr>
         
         <% for(var i=0; i < movies.length; i++) { %>
             <tr>
                 <td><%= movies[i].name %></td>
                 <td><%= movies[i].description %></td>
+                <td><a href="deletarfilme?id=<%= movies[i].id %>">Deletar</a></td>
             </tr>
         <% } %>
     </table>
